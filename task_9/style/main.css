@@ -1,0 +1,118 @@
+body{
+    font-family: "Microsoft Yahei";
+    min-width: 900px;
+}
+header{
+    width: 100%;
+    background-color: #39a9e6;
+}
+header .logo{
+    margin: 10px 0 9px 50px;
+    width: 36px;
+    height: 36px;
+}
+
+header .header-right{
+    float: right;
+    position: relative;
+    line-height: 55px;
+    margin-right: 93px;
+}
+
+.header-right img{
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: 17px;
+    top: 22px;
+
+}
+header input{
+    width: 278px;
+    height: 26px;
+    padding-left: 34px;
+    border-radius: 12px;
+    outline: none;
+    margin-right: 22px;
+}
+
+header a{
+    font-size: 12px;
+    line-height: 55px;
+    display: inline-block;
+}
+
+header a::before{
+    content: url("../images/header-login.png");
+    position: relative;
+    right: 5px;
+    top: 4px;
+}
+
+
+
+.left-fixed{
+    position: fixed;
+    left: 0;
+    height: 100%;
+    background-color: #24305f;
+}
+.person-info{
+    width: 259px;
+    border-top: 1px solid #3592cd;
+    border-right: 1px solid #4c567c;
+    border-bottom: 1px solid #263362;
+}
+.person-top img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #b6bac8;
+    float: left;
+    padding: 4px;
+    margin: 18px 18px 18px 45px;
+}
+.person-top h2{
+    line-height: 93px;
+    color: #f6f5f5;
+    font-size: 16px;
+}
+.person-bottom{
+    width: 259px;
+    letter-spacing: 0;
+    word-spacing: 0;
+    font-size: 0;
+    margin-top: 7px;
+    margin-bottom: 22px;
+}
+.person-bottom a{
+    display: inline-block;
+    font-size: 12px;
+    text-align: center;
+    color: #6e8095;
+}
+
+.person-bottom a span{
+    font-size: 16px;
+}
+
+.person-bottom a:first-child{
+    margin-left: 63px;
+    margin-right: 31px;
+    position: relative;
+}
+.person-bottom a:first-child::after{
+    content: "";
+    width: 2px;
+    height: 30px;
+    position: absolute;
+    display: block;
+    right: -31px;
+    top: 5px;
+    cursor: default;
+    background-color: #283665;
+}
+
+.person-bottom a:last-child{
+    margin-left: 30px;
+}
