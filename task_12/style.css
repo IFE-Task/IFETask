@@ -23,6 +23,7 @@ form input{
     height: 22px;
     width: 100px;
     transition: 0.5s width;
+    outline: none;
 }
 
 form input:focus{
