@@ -55,6 +55,7 @@ header a::before{
     position: fixed;
     left: 0;
     height: 100%;
+    overflow: scroll;
     background-color: #24305f;
 }
 .person-info{
@@ -89,7 +90,7 @@ header a::before{
     display: inline-block;
     font-size: 12px;
     text-align: center;
-    color: #6e8095;
+    color: #5d89ad;
 }
 
 .person-bottom a span{
@@ -115,4 +116,57 @@ header a::before{
 
 .person-bottom a:last-child{
     margin-left: 30px;
+}
+
+
+.person-list{
+    width: 100%;
+    line-height: 48px;
+    background-color: #24305f;
+}
+.person-list p, .person-list i{
+    color: #5d89ad;
+    font-size: 12px;
+    margin-left: 45px;
+    display: inline-block;
+    cursor: pointer;
+}
+.person-list i{
+    position: relative;
+    bottom: 2px;
+    font-size: 14px;
+}
+.person-list p{
+    margin-left: 14px;
+}
+
+.second-list{
+    line-height: 32px;
+}
+.second-list p{
+    margin-left: 4px;
+}
+.second-list i{
+    font-size: 10px;
+    margin-left: 7px;
+}
+
+.second-list i:first-child{
+    margin-left: 70px;
+}
+
+.third-list{
+    line-height: 28px;
+}
+.third-list i{
+    margin-left: 102px !important;
+}
+.checked{
+    color: #e9eef3 !important;
+}
+.second-list > i:first-child.checked{
+    transform:rotate(90deg);
+}
+.person-statement{
+    background-color: #2c3c6c;
 }
