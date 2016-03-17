@@ -50,12 +50,9 @@ header a::before{
 }
 
 
-
 .left-fixed{
-    position: fixed;
-    left: 0;
+    float: left;
     height: 100%;
-    overflow: scroll;
     background-color: #24305f;
 }
 .person-info{
@@ -169,4 +166,188 @@ header a::before{
 }
 .person-statement{
     background-color: #2c3c6c;
+}
+.person-list:hover, .second-list:hover, .third-list:hover{
+    background-color: #2c3c6c;
+}
+.person-list:hover > p, .person-list:hover > i, .second-list:hover > p,.second-list:hover > i, .third-list:hover > p,.third-list:hover > i {
+    color: #e9eef3
+}
+
+.second-list:hover > i:first-child{
+    transform:rotate(90deg);
+}
+
+
+.detail-body{
+    margin-left: 260px;
+    background-color: #eaefee;
+}
+.detail-head{
+    background-color: #fff;
+}
+.detail-head span{
+    color: #aaaaaa;
+    font-size: 12px;
+    line-height: 30px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+.detail-head span:first-child{
+    margin-left: 30px;
+}
+.detail-head span::after{
+    content: "/";
+    color: #aaaaaa;
+    margin-left: 6px;
+    margin-right: 5px;
+    cursor: default;
+}
+.detail-head span:last-child{
+    color: #2189bf;;
+}
+
+.detail-main{
+    margin: 0 auto;
+    padding-top: 19px;
+    width: 889px;
+}
+
+.detail-main-top{
+    border: 1px solid #d9dfe5;
+    height: 71px;
+    padding-top: 15px;
+    padding-left: 12px;
+    margin-bottom: 8px;
+    background-color: #fff;
+}
+.detail-main-top > div{
+    display: inline-block;
+}
+
+.detail-main-top span{
+    color: #aaaaaa;
+    margin-right: 15px;
+    font-size: 12px;
+}
+.detail-main-top>span:first-child{
+    margin-left: 23px;
+}
+.detail-main-top select{
+    width: 68px;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-progress-appearance: none;
+    border: 1px solid #c2c3c4;
+    border-radius: 0;
+    padding: 4px 14px 4px 10px;
+    background: url("../images/select-bg.png") no-repeat 95%;
+    margin-bottom: 6px;
+    font-size: 12px;
+}
+.top1{
+    margin-right: 23px;
+    vertical-align: top;
+}
+.top2{
+    position: relative;
+    margin-right: 46px;
+}
+.top2 > select, .top3 > select:last-of-type{
+    width: 118px;
+}
+.top2 > img{
+    position: absolute;
+    right: -30px;
+    top: 10px;
+    cursor: pointer;
+}
+.top3 input[type="date"]{
+    width: 126px;
+    margin-right: 15px;
+    border: 1px solid #c2c3c4;
+}
+.top3-third{
+    margin-left: 25px;
+}
+
+.detail-main-top > button{
+    width: 50px;
+    height: 26px;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    margin-left: 35px;
+    vertical-align: top;
+    margin-top: 16px;
+    background-color: #388ac1;
+    cursor: pointer;
+    outline: none;
+}
+
+.detail-main-second{
+    overflow: hidden;
+}
+.detail-main-second li{
+    float: left;
+    line-height: 62px;
+    border-top: 1px solid #dddbdc;
+    border-left: 1px solid #dddbdc;
+    background-color: #fff;
+    color: #323333;
+    font-size: 12px;
+    height: 62px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.detail-main-second li:first-child, .detail-main-second .list-final{
+    padding: 0 10px;
+    color: #ababab;
+    vertical-align: top;
+}
+.detail-main-second li:last-child{
+    margin: 0;
+    width: 122px;
+
+}
+.detail-main-second li:last-child img{
+    margin-left: 16px;
+    margin-top: 16px;
+}
+
+.detail-main-second li:last-child span{
+    margin-left: 5px;
+    vertical-align: top;
+}
+
+.detail-main-second-list{
+    width: 110px;
+    height: 62px;
+    line-height: 19px !important;
+}
+.detail-main-second-list:last-of-type{
+    margin-right: 5px;
+}
+.detail-main-second-list p{
+    padding-top: 10px;
+    padding-left: 27px;
+}
+.snd-font-grey{
+    margin-left: -4px;
+    padding-top: 2px !important;
+    color: #acacab;
+}
+.snd-font-grey span{
+    color: #ec6500;
+    font-size: 18px;
+}
+.detail-main-second-list-active, .detail-main-second-list:hover{
+    height: 60px !important;
+    border-top: 3px solid #4388c9 !important;
+}
+.detail-main-second-list-active p:nth-child(1), .detail-main-second-list:hover p:nth-child(1){
+    padding-top: 8px;
 }
