@@ -11,12 +11,13 @@ ul {
 }
 
 #introduce {
-    width: 300px;
+    width: 320px;
     position: absolute;
     left: 0;
     top: 0;
 }
 #introduce ul li {
+    font-size: 12px;
     margin-top: 20px;
 }
 .top-x {

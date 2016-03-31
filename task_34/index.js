@@ -36,6 +36,50 @@ function startMove(order) {
             box.style.webkitTransform = 'rotate('+params.rotate+'deg)';
         }
             break;
+        case 'TRA LEF': {
+            if(flag != true) {
+                return;
+            }
+            if(params.left <=0) {
+                return;
+            }
+            move(box, { 'left' : params.left - 50});
+            params.left -=50;
+        }
+            break;
+        case 'TRA RIG': {
+            if(flag != true) {
+                return;
+            }
+            if(params.left >= 450) {
+                return;
+            }
+            move(box, { 'left' : params.left + 50});
+            params.left += 50;
+        }
+            break;
+        case 'TRA TOP': {
+            if(flag != true) {
+                return;
+            }
+            if(params.top <= 0) {
+                return;
+            }
+            move(box, { 'top' : params.top - 50});
+            params.top -= 50;
+        }
+            break;
+        case 'TRA BOT': {
+            if(flag != true) {
+                return;
+            }
+            if(params.top >=450) {
+                return;
+            }
+            move(box, { 'top' : params.top + 50});
+            params.top += 50;
+        }
+            break;
         case 'GO': {
             if(flag != true) {
                 return;
@@ -87,10 +131,11 @@ function startMove(order) {
  *处理指令,正则只匹配合适的指令
  */
 function dealOrder(value) {
-    var match = /^((GO)|(TUN\sLEF)|(TUN\sRIG)|(TUN\sBAC))$/g;
+    var match = /^((GO)|(TUN\s((LEF)|(RIG)|(BAC)))|(TRA\s((LEF)|(TOP)|(RIG)|(BOT)))|(MOV\s((LEF)|(TOP)|(RIG)|(BOT))))$/gi;
     var result = value.match(match);
     if(result) {
-        startMove(result[0]);
+        var res = result[0].toUpperCase();
+        startMove(res);
     }
 }
 
