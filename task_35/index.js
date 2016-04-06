@@ -18,8 +18,8 @@ function dealOrder() {
     if(len == 0) {
         return;
     }
-    console.log(params.left);
     var timer;
+    //按指令顺序执行指令
     var doDrder = function() {
         var excstep = /\d+/;
         var excvalue = /(^go)|(^\w+\s\w+)/i;
@@ -35,6 +35,8 @@ function dealOrder() {
         startMove(value, step);
     };
 
+
+    //延迟执行指令
     doDrder();
     if(order.value.length >= 1) {
         laterDeal();

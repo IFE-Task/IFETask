@@ -112,11 +112,6 @@ textarea {
     outline: none;
 }
 
-/*.sidebar ul .active {*/
-    /*background-color: #ff0000;*/
-/*}*/
-
-
 .translateRotate {
     transition: transform 0.5s;
 }
